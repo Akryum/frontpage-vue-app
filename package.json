@@ -4,11 +4,13 @@
   "author": "Guillaume Chau <guillaume.b.chau@gmail.com>",
   "private": true,
   "scripts": {
-    "dev": "webpack-dev-server --inline --hot",
+    "start": "webpack-dev-server --inline --hot --port 3000",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "dependencies": {
-    "vue": "^2.0.0-rc.1"
+    "apollo-client": "^0.4.19",
+    "vue": "^2.0.0-rc.1",
+    "vue-apollo": "^1.0.0-beta6"
   },
   "devDependencies": {
     "babel-core": "^6.0.0",
