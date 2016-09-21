@@ -10,7 +10,7 @@
   "dependencies": {
     "apollo-client": "^0.4.19",
     "vue": "^2.0.0-rc.1",
-    "vue-apollo": "^1.0.0-beta6"
+    "vue-apollo": "^1.0.0-beta7-3"
   },
   "devDependencies": {
     "babel-core": "^6.0.0",

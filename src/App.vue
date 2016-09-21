@@ -1,22 +1,66 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <h1>{{ msg }}</h1>
+  <div class="app">
+    <post-list></post-list>
   </div>
 </template>
 
 <script>
+import PostList from './PostList.vue';
+
 export default {
-  data () {
-    return {
-      msg: 'Hello Vue!'
-    }
-  }
-}
+  name: 'app',
+  components: {
+    PostList,
+  },
+};
 </script>
 
 <style>
 body {
-  font-family: Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #333;
 }
+
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li span {
+  color: #999;
+  margin-right: 10px;
+}
+
+.app {
+  text-align: center;
+}
+
+.app-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.app-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.app-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
 </style>
