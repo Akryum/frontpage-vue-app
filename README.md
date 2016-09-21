@@ -1,18 +1,33 @@
-# frontpage-vue-app
+# Apollo VueJS 2.0 Hello World app
 
-> A Vue.js project
+This is the simple example VueJS/Apollo app that lives at dev.apollodata.com.
 
-## Build Setup
+## Installation
 
-``` bash
-# install dependencies
+Clone the repository and run `npm install`:
+
+```
+git clone https://github.com/apollostack/frontpage-vue-app
+cd frontpage-vue-app
 npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
 ```
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+## Starting the app
+
+This app talks to the hello world server, available here: https://github.com/apollostack/frontpage-server
+
+Once you've installed and started that server, start this app with:
+
+```
+npm start
+```
+
+It will open a browser window, or you can browse to http://localhost:3000.
+
+
+## Build the app to production
+
+```
+npm run build
+```
