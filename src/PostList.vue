@@ -63,7 +63,7 @@ export default {
   // Computed properties
   computed: {
     sortedPosts() {
-      return this.posts.sort((x, y) => y.votes - x.votes);
+      return this.posts.slice().sort((x, y) => y.votes - x.votes);
     }
   },
 };
