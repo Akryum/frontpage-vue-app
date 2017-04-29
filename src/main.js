@@ -9,17 +9,19 @@ const apolloClient = new ApolloClient({
     uri: 'http://localhost:8080/graphql',
     transportBatching: true,
   }),
-  queryTransformer: addTypename,
-  dataIdFromObject: r => r.id,
+  connectToDevTools: true,
 });
 
 // Install the vue plugin
-Vue.use(VueApollo, {
-  apolloClient,
+Vue.use(VueApollo);
+
+const apolloProvider = new VueApollo({
+  defaultClient: apolloClient,
 });
 
 // Start the app
 new Vue({
   el: '#app',
+  apolloProvider,
   render: h => h(App)
 });
